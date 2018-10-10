@@ -29,6 +29,6 @@ test('missing URL input for soundEffect', () => {
     volume: 0.45,
     name: 'main-music',
   });
-  expect(result == undefined).toBe(true);
+  expect(result === undefined).toBe(true);
   
 });
