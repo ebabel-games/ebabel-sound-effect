@@ -21,3 +21,14 @@ test('soundEffect returns something other than undefined.', () => {
   });
   expect(result !== undefined).toBe(true);
 });
+
+test('missing URL input for soundEffect', () => {
+  const result = soundEffect({
+    THREE,
+    camera,
+    volume: 0.45,
+    name: 'main-music',
+  });
+  expect(result == undefined).toBe(true);
+  
+});
