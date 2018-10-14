@@ -1,6 +1,6 @@
 {
   "name": "ebabel-sound-effect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Attach a sound effect to a 3D mesh, like an npc for example.",
   "main": "index.js",
   "engines": {
@@ -33,8 +33,8 @@
   "devDependencies": {
     "ajv": "^6.5.4",
     "babel-eslint": "^10.0.1",
-    "ebabel-mocks": "^1.0.6",
-    "eslint": "^5.6.1",
+    "ebabel-mocks": "^1.0.10",
+    "eslint": "^5.7.0",
     "jest": "^23.6.0",
     "jsdoc": "^3.5.5"
   }

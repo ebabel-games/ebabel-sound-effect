@@ -18,10 +18,12 @@ const soundEffect = (input) => {
 
   if (!camera || !name || !url) return;
 
-  const listener = camera.children.filter((l) => l.name === 'camera-listener');
-  if (!listener || !listener[0]) return;
+  // Create an AudioListener and add it to the camera.
+  const listener = new THREE.AudioListener();
+  listener.name = name;
+  camera.add(listener);
 
-  const sound = new THREE.PositionalAudio(listener[0]);
+  const sound = new THREE.PositionalAudio(listener);
   sound.name = name;
 
   const audioLoader = new THREE.AudioLoader();
